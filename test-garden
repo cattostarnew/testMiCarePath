@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:url" content="">
+  	<link rel="stylesheet" href="https://rkstudio-customer-assets.s3.amazonaws.com/MICAREPATH/micarepath-video.css" />
+  </head>
+<body>
+    <div class="player-wrapper">
+        <div class="player">
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h1>Garden Guided Imagery</h1>
+    <h3 style="text-align:center">Guided imagery video with background music</h3>
+    <div class="transcript">
+        <p>
+          If you wish to view the video full screen, click the arrow in the bottom right corner of the video screen and turn your phone sideways.
+        </p>
+        <p>
+          Tell us how you feel about the video: 
+        </p>
+     <div class="transcript">
+      	<input type="checkbox" id="scales" name="scales"
+         checked>
+  	  		<label for="scales">I like the video!</label>
+      <div class="transcript">
+      	<input type="checkbox" id="horns" name="horns">
+  			<label for="horns">I did not complete it but wish to come back soon!</label>
+      
+    <div class="consent-next">
+        <button onclick="window.webkit.messageHandlers.ResearchKit.postMessage('-')">Next</button>
+    </div>
+</body>
+</html>
