@@ -17,9 +17,9 @@
     <!-- End Google Tag Manager (noscript) -->
 <label for="cars">Choose other meditation videos to watch:</label>
 
-<select name="cars" id="cars">
+<select name="cars" id="cars" onchange="myFunction(this)">
   <option>--Select one option--</option>
-  <option value="seaside">Seaside</option>
+  <option value="beach">Seaside</option>
   <option value="garden">Garden</option>
   <option value="generic">Generic</option>
   <option value="mountain">Mountain</option>
@@ -36,26 +36,35 @@
     let selected_video = params.get('video')
     console.log(selected_video)
     let myIframe = document.getElementById("myIframe")
-    switch(selected_video){
-        case "seaside":
-            console.log("seaside")
-            myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-            break
+    change(selected_video)
+    function change(video){
+        switch(video){
+            case "garden":
+                console.log("seaside")
+                myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                break
 
-        case "beach":
-            console.log("beach")
-            myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-            break
+            case "beach":
+                console.log("beach")
+                myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                break
 
-        case "mountain":
-            console.log("mountain")
-            myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-            break
+            case "mountain":
+                console.log("mountain")
+                myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                break
 
-        case "generic":
-            myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-            break
-        }
+            case "generic":
+                myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                break
+            }
+    }
+
+    function myFunction(getOption){
+        var value = getOption.value;  
+        console.log(value);
+        change(value)
+    }
        
 </script>
 </body>
