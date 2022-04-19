@@ -20,8 +20,8 @@
 </div>
 
 <script>
-    const params = new URLSearchParams(window.location.search)
-    const selected_video = params.get('video')
+    let params = new URLSearchParams(window.location.search)
+    let selected_video = params.get('video')
     let myIframe = document.getElementById("myIframe")
     switch(selected_video){
         case "seaside":
