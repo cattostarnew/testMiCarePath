@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221162609-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<title>Video Watching</title>
+<head>
+</head>
+<body>
+<label for="cars">Choose a car:</label>
 
-      gtag('config', 'UA-221162609-1');
-    </script>
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
 
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1> Do you want to play background music? </h1>
-    <div>
-      <input type="button" onclick="location.href='https://cattostarnew.github.io/testMiCarePath/index_1';" value="With music" />
+<div class="player-wrapper">
+    <div class="player">
+        <iframe width="400" height="225" id="myframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div>
-      <input type="button" onclick="location.href='https://youtube.com';" value="Go to youtube" />
-    </div> 
-  </body> 
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search)
+    const selected_video = params.get('video')
+    let myIframe = document.getElementById("myIframe")
+    switch(selected_video){
+        case "seaside":
+            myIframe.src = "https://www.youtube.com"
+
+        case "beach":
+            myIframe.src = "https://www.google.com"
+}
+</script>
+</body>
 </html>
