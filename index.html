@@ -4,13 +4,14 @@
 <head>
 </head>
 <body>
-<label for="cars">Choose a car:</label>
+<label for="cars">Choose other meditation videos to watch:</label>
 
 <select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+  <option>--Select one option--</option>
+  <option value="seaside">Seaside</option>
+  <option value="garden">Garden</option>
+  <option value="generic">Generic</option>
+  <option value="mountain">Mountain</option>
 </select>
 
 <div class="player-wrapper">
@@ -22,14 +23,29 @@
 <script>
     let params = new URLSearchParams(window.location.search)
     let selected_video = params.get('video')
+    console.log(selected_video)
     let myIframe = document.getElementById("myIframe")
     switch(selected_video){
         case "seaside":
+            console.log("seaside")
             myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+            break
 
         case "beach":
+            console.log("beach")
             myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-}
+            break
+
+        case "mountain":
+            console.log("mountain")
+            myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+            break
+
+        case "generic":
+            myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+            break
+        }
+       
 </script>
 </body>
 </html>
