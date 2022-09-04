@@ -1,0 +1,140 @@
+[
+ {
+   "name": "Mind02",
+   "Text": "Stress and anxiety are a part of life. Take a moment to practice \"square breathing.\" Inhale to the count of four, hold your inhale for a count of four, exhale to the count of four, and pause at the bottom of your exhale for a count of four. Repeat. Your body will respond, even if it takes some time. Hang in there and notice what happens.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind03",
+   "Text": "Take a moment to think about the things that have brought you joy in the past. Maybe it's listening to a favorite song, calling a friend, or reading a book. Whenever you feel down, keep in mind that you have the right to choose something to do in that moment that brings joy.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind04",
+   "Text": "Feeling anxious or down? Keep in mind that this can feel worse when our thoughts move to the past or future. Try being in the moment by practicing 4-7-8 breathing: Inhale to 4, hold for 7, and exhale to 8.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind05",
+   "Text": "Sprinkle some more humor & laughter into your daily life! Watch a funny movie, TV show or YouTube video, listen to a funny podcast or read a book that makes you chuckle. Spend time with people who see the bright side and make you smile. Take time for play!",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind06",
+   "Text": "Gratitude isn't just for when times are good - it also helps us cope with stress and negative emotions. Take a moment to note three things you're thankful for that happened today. ",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind07",
+   "Text": "Take a few minutes every day to wind down. Try meditating to relieve built up tension.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind08",
+   "Text": "When you feel stressed, worried, or angry, notice where you feel it in your body. Maybe it's in your neck, you're clenching your fists, or you're frowning. Direct your focus to that spot and try to relax. Notice any calming effect this has on your mood.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind09",
+   "Text": "Challenges are what make life interesting & overcoming them is what makes life meaningful. So hang in there - you've got this!",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind10",
+   "Text": "When you're frustrated by something, try to come up with a neutral or positive interpretation for the situation. For example, having your plans cancelled at the last minute can be seen as a negative, but what you do with your newly freed up schedule can be what you make of it.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind11",
+   "Text": "When you feel stressed, practice this muscle relaxation technique. Starting from your face and working down to your feet, tighten up the muscles in different areas of your body, hold for a count of five, and then slowly relax them for a count of 10. Notice any calming effect this has on your mood.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind12",
+   "Text": "Feeling overwhelmed? Do something that relaxes you. Read a book, watch a movie, play a game, or go for a hike!",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind13",
+   "Text": "Need a boost? Think about something you're grateful for.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind14",
+   "Text": "Need a boost? Think about someone you're grateful for. Tell them how important they are to you - you will brighten their day and feel good about doing it too!",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind15",
+   "Text": "Feeling low? Think about something that made you laugh in the past week. Laughter is the best medicine!",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mind16",
+   "Text": "Boost your mood by thinking about something beautiful or interesting that you saw in the past week. Try to recall as many details about it as you can.",
+   "Condition": "{avg, mindfulness_hml, last week} = L",
+   "Type": "Mindfulness"
+ },
+ {
+   "name": "Mood01",
+   "Text": "When you're feeling down, keep in mind what is most important to you. Thinking about what you value can help remind you that what you are doing is important.",
+   "Condition": "{avg, mood_hml, last week} = L",
+   "Type": "Mood"
+ },
+ {
+   "name": "Mood02",
+   "Text": "Feeling down? A minute of mindfulness can help. Grab a snack or a beverage. Use your senses to get curious about look, taste, smell, feel, and touch. Notice textures, temperatures, and tastes. Notice how you feel after this minute of mindfulness. You may notice that your mood has improved.",
+   "Condition": "{avg, mood_hml, last week} = L",
+   "Type": "Mood"
+ },
+ {
+   "name": "Mood13",
+   "Text": "Being positive can help improve your mood. Today, try reflecting on 3 things you like about yourself!",
+   "Condition": "{avg, mood_hml, last week} = L",
+   "Type": "Mood"
+ },
+ {
+   "name": "Mood14",
+   "Text": "Research shows that experiencing awe and wonder can boost happiness. See if you can boost your mood by imagining you're seeing something for the first time, such as a nature scene or an impressive building that you walk by each day.",
+   "Condition": "{avg, mood_hml, last week} = L",
+   "Type": "Mood"
+ },
+ {
+   "name": "Sad15",
+   "Text": "Feeling sad? A minute of mindfulness can help. Grab a snack or a beverage. Use your senses to get curious about look, taste, smell, feel, and touch. Notice textures, temperatures, and tastes. Notice how you feel after this minute of mindfulness. You may notice that your mood has improved.",
+   "Condition": "{avg, sadness_hml, last week} = L",
+   "Type": "Sadness"
+ },
+ {
+   "name": "Stress01",
+   "Text": "Feeling stressed out? A minute of mindfulness can help. Grab a snack or a beverage. Use your senses to get curious about its look, taste, smell, feel, and touch. Notice textures, temperatures, and tastes. Notice how you feel after this minute of mindfulness. You may notice your thoughts were a little more in moment.",
+   "Condition": "{avg, stress_hml, last week} = L",
+   "Type": "Caregiver Stress"
+ },
+ {
+   "name": "Worry04",
+   "Text": "When you start to feel overwhelmed by your worries, a few deep breaths can steady and calm you. Breathe in slowly and deeply through your nose, hold the breath for a moment, then exhale slowly through your mouth. Repeat until you feel better!",
+   "Condition": "{avg, worry_hml, last week} = L",
+   "Type": "Worry"
+ },
+ {
+   "name": "Worry07",
+   "Text": "Are you feeling anxious? Close your eyes and think of a peaceful, relaxing place. Try to imagine as many different sights, sounds, and smells as you can. Continue until you feel more relaxed, then open your eyes slowly.",
+   "Condition": "{avg, worry_hml, last week} = L",
+   "Type": "Worry"
+ }
+]
