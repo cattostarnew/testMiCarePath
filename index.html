@@ -38,7 +38,9 @@
     <!-- <div class="player">
         <iframe id="myIframe" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0&origin=https://cattostarnew.github.io/testMiCarePath/"></iframe>
     </div> -->
-<div id="myIframe" class="embed-responsive-item video-frame" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0&origin=https://cattostarnew.github.io/testMiCarePath/"></div>
+<!-- <div id="myIframe" class="embed-responsive-item video-frame" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0&origin=https://cattostarnew.github.io/testMiCarePath/"></div> -->
+<div id="myIframe" class="embed-responsive-item video-frame" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true"></div>
+
 <!-- </div> -->
 
 <!-- <video id="myIframe" controls width="250">
@@ -53,7 +55,7 @@
     let selected_video = params.get('video')
     console.log(selected_video)
     let myIframe = document.getElementById("myIframe")
-    //change(selected_video)
+    change(selected_video)
     function change(video){
         switch(video){
             case "garden":
