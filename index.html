@@ -103,8 +103,10 @@
     }
     function onPlayerReady(event) {
       document.getElementById('myIframe').style.borderColor = '#FF6D00';
+      console.log("playerReady");
     }
     function changeBorderColor(playerStatus) {
+      console.log(playerStatus);
       var color;
       if (playerStatus == -1) {
         color = "#37474F"; // unstarted = gray
