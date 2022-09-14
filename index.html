@@ -36,54 +36,9 @@
 
 <div class="player-wrapper">
     <div class="player">
-        <iframe id="existing-iframe-example" width="400" height="225" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true"></iframe>
+        <iframe id="myIframe" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true"></iframe>
     </div>
 </div>
-
-<script type="text/javascript">
-    var tag = document.createElement('script');
-    tag.id = 'iframe-demo';
-    tag.src = 'https://www.youtube.com/iframe_api';
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player("existing-iframe-example", {
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-      });
-    }
-    function onPlayerReady(event) {
-      document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
-    }
-    function changeBorderColor(playerStatus) {
-      var color;
-      if (playerStatus == -1) {
-        color = "#37474F"; // unstarted = gray
-      } else if (playerStatus == 0) {
-        color = "#FFFF00"; // ended = yellow
-      } else if (playerStatus == 1) {
-        color = "#33691E"; // playing = green
-      } else if (playerStatus == 2) {
-        color = "#DD2C00"; // paused = red
-      } else if (playerStatus == 3) {
-        color = "#AA00FF"; // buffering = purple
-      } else if (playerStatus == 5) {
-        color = "#FF6DOO"; // video cued = orange
-      }
-      if (color) {
-        document.getElementById('existing-iframe-example').style.borderColor = color;
-      }
-    }
-    function onPlayerStateChange(event) {
-      changeBorderColor(event.data);
-      console.log(event.data)
-    }
-  </script>
-
 
 <script>
     let params = new URLSearchParams(window.location.search)
@@ -126,6 +81,55 @@
     //this did not track iframe component
        
 </script>
+
+
+
+<script type="text/javascript">
+    var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("myIframe", {
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+      });
+    }
+    function onPlayerReady(event) {
+      document.getElementById('myIframe').style.borderColor = '#FF6D00';
+    }
+    function changeBorderColor(playerStatus) {
+      var color;
+      if (playerStatus == -1) {
+        color = "#37474F"; // unstarted = gray
+      } else if (playerStatus == 0) {
+        color = "#FFFF00"; // ended = yellow
+      } else if (playerStatus == 1) {
+        color = "#33691E"; // playing = green
+      } else if (playerStatus == 2) {
+        color = "#DD2C00"; // paused = red
+      } else if (playerStatus == 3) {
+        color = "#AA00FF"; // buffering = purple
+      } else if (playerStatus == 5) {
+        color = "#FF6DOO"; // video cued = orange
+      }
+      if (color) {
+        document.getElementById('myIframe').style.borderColor = color;
+      }
+    }
+    function onPlayerStateChange(event) {
+      changeBorderColor(event.data);
+      console.log(event.data);
+    }
+  </script>
+
+
+
 
 </body>
 </html>
