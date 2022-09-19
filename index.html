@@ -15,9 +15,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-7WQYKMC2PK');
-  gtag('config', 'G-7WQYKMC2PK', {
-'user_id': "xyzzz"
-});
+//   gtag('config', 'G-7WQYKMC2PK', {
+// 'user_id': "zzz"
+// });
   dataLayer.push({'user_id': 'xyzzz'});
 </script>
 <!-- <script src = "https://www.youtube.com/iframe_api"> </script> -->
@@ -37,11 +37,11 @@
   <option value="mountain">Mountain</option>
 </select>
 
-<div class="player-wrapper"> --> -->
+<!-- <div class="player-wrapper">
     <div class="player">
         <iframe id="myIframe" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true"></iframe>
-        <!-- <iframe id="myIframe" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"></iframe> -->
-    </div>
+         <iframe id="myIframe" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"></iframe> 
+    </div> -->
 <!-- <div id="myIframe" class="embed-responsive-item video-frame" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true" src="https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0&origin=https://cattostarnew.github.io/testMiCarePath/"></div> -->
 <!-- <div id="myIframe" class="embed-responsive-item video-frame" width="400" height="225" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi="true"></div> -->
 
@@ -56,14 +56,24 @@
 
 <script>
     let params = new URLSearchParams(window.location.search)
-    let selected_video = params.get('video')
+    let selected_video = params.get('video')//count for a web view?
     console.log(selected_video)
     let myIframe = document.getElementById("myIframe")
     change(selected_video)
+
+    function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "http://google.com/");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.body.appendChild(ifrm);
+    }
+
+
     function change(video){
         switch(video){
             case "garden":
-                console.log("seaside")
+                console.log("garden")
                 myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 onYouTubeIframeAPIReady()
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
