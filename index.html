@@ -61,24 +61,25 @@
             case "garden":
                 console.log("seaside")
                 myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-                document.getElementById('myIframe').contentDocument.location.reload(true)
+                onYouTubeIframeAPIReady()
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "beach":
                 console.log("beach")
                 myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-                document.getElementById('myIframe').contentDocument.location.reload(true)
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "mountain":
                 console.log("mountain")
                 myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-                document.getElementById('myIframe').contentDocument.location.reload(true)
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "generic":
                 myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
-                document.getElementById('myIframe').contentDocument.location.reload(true)
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
             }
     }
