@@ -18,7 +18,7 @@
 //   gtag('config', 'G-7WQYKMC2PK', {
 // 'user_id': "zzz"
 // });
-  dataLayer.push({'user_id': 'xyzzz'});
+  //dataLayer.push({'user_id': 'xyzzz'});
 </script>
 <!-- <script src = "https://www.youtube.com/iframe_api"> </script> -->
 </head>
@@ -57,7 +57,11 @@
 <script>
     let params = new URLSearchParams(window.location.search)
     let selected_video = params.get('video')//count for a web view?
+    let userinfo = params.get("user")
     console.log(selected_video)
+    console.log(userinfo)
+    //post user info to the datalayer
+    dataLayer.push({'user_id': userinfo})
     let myIframe = document.getElementById("myIframe")
     change(selected_video)
 
