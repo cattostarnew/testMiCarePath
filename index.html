@@ -30,7 +30,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-<label for="cars" style="font-size:8vw">Choose other meditation videos to watch:</label>
+<label for="cars" style="font-size:8vw">Try a different relaxation video or breathing pacer:</label>
 <select name="cars" style="font-size:8vw" id="cars" onchange="myFunction(this)">
   <option>--Select one option--</option>
   <option value="beach">Seaside</option>
@@ -39,6 +39,8 @@
   <option value="mountain">Mountain</option>
   <option value="breathing">Diaphragmatic Breathing</option>
 </select>
+
+
 
 <div class="player-wrapper">
     <div class="player">
@@ -64,7 +66,7 @@
     console.log(selected_video)
     console.log(userinfo)
     //post user info to the datalayer
-    dataLayer.push({'user_id': userinfo})
+    dataLayer.push({'user_info': userinfo})
     let myIframe = document.getElementById("myIframe")
     change(selected_video)
 
