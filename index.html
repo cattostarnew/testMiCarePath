@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 <title>Video Watching</title>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -28,8 +30,8 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-<label for="cars">Choose other meditation videos to watch:</label>
-<select name="cars" id="cars" onchange="myFunction(this)">
+<label for="cars" style="font-size:10vw">Choose other meditation videos to watch:</label>
+<select name="cars" style="font-size:10vw" id="cars" onchange="myFunction(this)">
   <option>--Select one option--</option>
   <option value="beach">Seaside</option>
   <option value="garden">Garden</option>
@@ -100,6 +102,8 @@
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
             }
+
+            
     }
 
     function myFunction(getOption){
