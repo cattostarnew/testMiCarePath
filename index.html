@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<title>Video Watching</title>
+<title>MiCarePath Video Watching</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Tag Manager -->
@@ -23,15 +23,40 @@
   //dataLayer.push({'user_id': 'xyzzz'});
 </script>
 <!-- <script src = "https://www.youtube.com/iframe_api"> </script> -->
+<style>
+  h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+  }
+  label {
+    color: navy;
+    font-family: Arial;
+    font-size: 4vw;
+  }
+  select {
+    color: navy;
+    font-family: Arial;
+    font-size: 4vw;
+  }
+  </style>
 </head>
-<body> 
+<body style="background-color:beige;"> 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCMSMZQ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-<label for="cars" style="font-size:8vw">Try a different relaxation video or breathing pacer:</label>
-<select name="cars" style="font-size:8vw" id="cars" onchange="myFunction(this)">
+<h1> Hi, take some time and reward yourself with mindfulness &#128512 </h1>
+
+<label for="cars" style="font-size:4vw" > &#9970 Try a different relaxation video or breathing pacer:</label>
+<select name="cars" style="font-size:4vw" id="cars" onchange="myFunction(this)">
   <option>--Select one option--</option>
   <option value="beach">Seaside</option>
   <option value="garden">Garden</option>
@@ -39,8 +64,6 @@
   <option value="mountain">Mountain</option>
   <option value="breathing">Diaphragmatic Breathing</option>
 </select>
-
-
 
 <div class="player-wrapper">
     <div class="player">
@@ -104,7 +127,6 @@
                 myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
-            
 
             case "breathing":
                 myIframe.src = "https://www.youtube.com/embed/eGBEw1diK5s?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
