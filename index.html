@@ -200,11 +200,11 @@
         document.getElementById("breath").classList.add("d-none");
         change(value);
          }
-    }
+    };
 
     function breathChange(getOption){
       var value = getOption.value; 
-      var option = document.getElementById("cars").options[dropdown.selectedIndex].value;
+      var option = document.getElementById("cars").value;
       if(value != null & option == "pacer"){
         change(value)
       }
