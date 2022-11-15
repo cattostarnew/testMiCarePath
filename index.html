@@ -46,6 +46,11 @@
     font-size: 4vw;
   }
   </style>
+  <style type = "text/css">
+    .d-none{
+      display: none;
+    }
+  </style>
 </head>
 <body style="background-color:beige;"> 
 <!-- Google Tag Manager (noscript) -->
@@ -63,9 +68,19 @@
   <option value="generic">Generic</option>
   <option value="mountain">Mountain</option>
   <option value="breathing">Diaphragmatic Breathing</option>
+  <option value="pacer">Breathing Pacer</option>
 </select>
 
-<p> * Change to full screen to enjoy the video :) </p>
+<select id="breath" onchange="breathChange(this)" class ="d-none">
+  <option>--Choose your breaching pace--</option>
+  <option value="5">5 breathes per minute</option>
+  <option value="6">6 breathes per minute</option>
+  <option value="7">7 breathes per minute</option>
+  <option value="8">8 breathes per minute</option>
+  <option value="9">9 breathes per minute</option>
+</select>
+
+<p> * Change to full screen and enjoy the video :) </p>
 
 
 <div class="player-wrapper">
@@ -109,43 +124,90 @@
         switch(video){
             case "garden":
                 console.log("garden")
-                myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                myIframe.src = "https://www.youtube.com/embed/O2qnKaR9M2Q?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //onYouTubeIframeAPIReady()
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "beach":
                 console.log("beach")
-                myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                myIframe.src = "https://www.youtube.com/embed/I96lFEmgQP0?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "mountain":
                 console.log("mountain")
-                myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                myIframe.src = "https://www.youtube.com/embed/AiAKJcvvC30?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "generic":
-                myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                myIframe.src = "https://www.youtube.com/embed/ncDjdooEmbo?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 break
 
             case "breathing":
-                myIframe.src = "https://www.youtube.com/embed/eGBEw1diK5s?autoplay=0&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                myIframe.src = "https://www.youtube.com/embed/eGBEw1diK5s?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
                 //document.getElementById('myIframe').contentDocument.location.reload(true)
                 //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 break
 
+            case "5":
+
+                myIframe.src = "https://www.youtube.com/embed/wEqIMIb-gRg?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
+                //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                break
+
+            case "6":
+
+                myIframe.src = "https://www.youtube.com/embed/f4gBu_uHSA0?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
+                //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                break
+
+            case "7":
+
+                myIframe.src = "https://www.youtube.com/embed/xpRwr_mHB08?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
+                //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                break
+
+            case "8":
+
+                myIframe.src = "https://www.youtube.com/embed/1u_94RLrMNo?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
+                //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                break
+
+            case "9":
+              
+                myIframe.src = "https://www.youtube.com/embed/10xtQj8VGKw?autoplay=1&playsinline=1&modestbranding=1&cc_load_policy=1&rel=0"
+                //document.getElementById('myIframe').contentDocument.location.reload(true)
+                //<iframe width="933" height="525" src="https://www.youtube.com/embed/eGBEw1diK5s" title="Diaphragmatic Breathing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                break
             }
 
-            
     }
 
     function myFunction(getOption){
         var value = getOption.value;  
         console.log(value);
+        if(value == "pacer"){
+        document.getElementById("breath").classList.remove("d-none");
+    }
+    else {
+        document.getElementById("breath").classList.add("d-none");
+        change(value);
+         }
+    }
+
+    function breathChange(getOption){
+      var value = getOption.value; 
+      var option = document.getElementById("cars").options[dropdown.selectedIndex].value;
+      if(value != null & option == "pacer"){
         change(value)
+      }
     }
 
     document.addEventListener("click", function(event){
